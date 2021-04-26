@@ -107,7 +107,7 @@ include('config.php');
                                 if ($_POST['iid']=='' and $_POST['vname']=='' and $_POST['datet']=='')
                                 {
                                   $query= "SELECT * FROM tblinwardbillmst inner join tblvendormst on tblvendormst.VendorId = tblinwardbillmst.VendorId where tblinwardbillmst.RecStatus='A' ORDER BY `tblinwardbillmst`.`InwardDate` DESC";
-                                  //echo $query;
+                               //   echo $query;
                                   $run = mysqli_query($con,$query);
                                 }
                                          
@@ -157,7 +157,7 @@ include('config.php');
                                     $qdate=substr($qdate, 0, 10);
                                     $qdate=explode("-", $qdate);
                                     $qdate=$qdate[2]."-".$qdate[1]."-".$qdate[0];
-                                    $qvid=$row[18];
+                                    $qvid=$row[22];
                                     $qgst=$row[3];
                                     $qtcost=$row[4];
                                     $qamount=$row[5];

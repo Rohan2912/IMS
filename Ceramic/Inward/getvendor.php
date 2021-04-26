@@ -21,7 +21,8 @@
         while($row = $result->fetch_assoc())
         {
             $ven_id = $row['VendorId'];
-            $ven_name = $row['VendorName'];
+            $ven_name = $row['VendorName']. " ";
+            $ven_name .= $row['MobileNo'];
             //$active_status = $row['active_status'];
 
 

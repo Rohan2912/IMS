@@ -421,7 +421,7 @@
       function checkRadio(radio) {
 
          if (radio.id === "ev") {
-            document.getElementById("button").innerHTML = "<select id='vname' name='vname' class='form-select col-md-4'><option selected>Select Vendor</option></select>";
+            document.getElementById("button").innerHTML = "<select id='vname' name='vname' class='form-select col-md-5'><option selected>Select Vendor</option></select>";
          }
          else if (radio.id === "nv") {
             window.location.href = '../Vendor/NewVendor.php';
