@@ -122,12 +122,12 @@
 
                       elseif ($_POST['vmno1'] AND $_POST['vmno2']=='' AND $_POST['select']=='inward') {
                       
-                        $query="SELECT InwardDate, InwardId, TotalAmount as total, AmountPending as pending, AmountPaid FROM tblinwardbillmst WHERE InwardDate LIKE '$start' AND RecStatus='A'";
+                        $query="SELECT InwardDate, InwardId, TotalAmount as total,AmountPaid, AmountPending as pending FROM tblinwardbillmst WHERE InwardDate LIKE '$start' AND RecStatus='A'";
                         $run=mysqli_query($con,$query);
 
                       }
                       elseif ($_POST['vmno1'] AND $_POST['vmno2'] AND $_POST['select']=='inward') { 
-                        $query="SELECT InwardDate, InwardId, TotalAmount as total, AmountPending as pending, AmountPaid FROM tblinwardbillmst WHERE InwardDate BETWEEN '$start' AND '$end' AND RecStatus='A'";
+                        $query="SELECT InwardDate, InwardId, TotalAmount as total,AmountPaid, AmountPending as pending FROM tblinwardbillmst WHERE InwardDate BETWEEN '$start' AND '$end' AND RecStatus='A'";
 
                         $run=mysqli_query($con,$query); 
                       }

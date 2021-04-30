@@ -115,38 +115,24 @@ margin-bottom: 0px;
                 <div class="sidebar-inner slimscrollleft">
 
 
-<!--                 <div class="user-box">
-                        <div class="user-img">
-                            <img src="assets/images/users/avatar-1.png" alt="user-img" title="admin" class="rounded-circle img-thumbnail img-responsive">
-                            <div class="user-status offline"><i class="mdi mdi-adjust"></i></div>
-                        </div>
-                        <h5><a href="#"><?php echo $_SESSION['username']; ?></a> </h5>
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <a href="#" >
-                                    <i class="mdi mdi-settings"></i>
-                                </a>
-                            </li>
-
-                            <li class="list-inline-item">
-                                <a href="logout.php" class="text-custom">
-                                    <i class="mdi mdi-power"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div> -->
 
 
                     <div id="sidebar-menu">
 
-                        <!-- <div class="topbar-left">
-                            <a href="index.html" class="logo"><span><img src="assets/images/img.png" height="120px" width="120px"></span><i class="mdi mdi-layers"></i>
-                            </a>
-                        </div> -->
-                        <br><br><br>
-<br>                    <br><br><br>
-<br>                    <br><br><br>
-<br><br><br>
+                        <br>
+                        <br>
+                        <br>
+<br>                    
+<br>
+<br>
+<br>
+<br>                    
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>	
                         <ul>
                             <li class="has_sub">
@@ -315,33 +301,6 @@ margin-bottom: 0px;
 </div>
 
 
-
-                        <!-- <ul class="nav navbar-nav list-inline navbar-left">
-                            <li class="list-inline-item">
-                                <button class="button-menu-mobile open-left">
-                                    <i class="mdi mdi-menu"></i>
-                                </button>
-                            </li>
-                            <li class="list-inline-item">
-                                <h4 class="page-title">Dashboard</h4>
-                            </li>
-                        </ul>
-
-                        <nav class="navbar-custom">
-
-                            <ul class="list-unstyled topbar-right-menu float-right mb-0">
-
-
-                                <li class="hide-phone">
-                                    <form class="app-search">
-                                        <input type="text" placeholder="Search..."
-                                                  class="form-control">
-                                        <button type="submit"><i class="fa fa-search"></i></button>
-                                    </form>
-                                </li>
-
-                            </ul>
-                        </nav> -->
  
                 </div>
             </div>

@@ -152,7 +152,7 @@
                      {
                         $query= "SELECT Discount,TransportCost,ExtraCost,PaymentDate,ChallanNo,CustomerName,TotalAmount,tblinwardpayment.AmountPaid,tblinwardpayment.AmountPending,PaymentID,PaymentNotes FROM ((tblinwardpayment
                                  INNER JOIN challanmst ON tblinwardpayment.ChallanId = challanmst.ChallanId)
-                                 INNER JOIN tblcustomermst ON challanmst.CustomerId = tblcustomermst.CustomerId) WHERE tblinwardpayment.RecStatus=1 and tblinwardpayment.StockMstSysId=0 UNION SELECT TotalDiscount,Transport_extracost,Transport_extracost,PaymentDate,tblinwardpayment.InwardId,VendorName,TotalAmount,tblinwardpayment.AmountPaid,tblinwardpayment.AmountPending,PaymentID,PaymentNotes FROM ((tblinwardpayment 
+                                 INNER JOIN tblcustomermst ON challanmst.CustomerId = tblcustomermst.CustomerId) WHERE tblinwardpayment.RecStatus=1 and tblinwardpayment.StockMstSysId=0 UNION SELECT TotalDiscount,temptransport as Transport_extracost,tempextra as ExtraCost,PaymentDate,tblinwardpayment.InwardId,VendorName,TotalAmount,tblinwardpayment.AmountPaid,tblinwardpayment.AmountPending,PaymentID,PaymentNotes FROM ((tblinwardpayment 
                                  INNER JOIN tblinwardbillmst ON tblinwardpayment.InwardId = tblinwardbillmst.InwardId)
                                  INNER JOIN tblvendormst ON tblinwardbillmst.VendorId = tblvendormst.VendorId) WHERE tblinwardpayment.RecStatus=1 and tblinwardpayment.StockMstSysId=0 ORDER BY PaymentDate DESC";
                         //echo $query;
