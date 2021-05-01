@@ -61,7 +61,10 @@
                     // document.getElementById("examt").style.display="none";
                }
          }
-      </script>
+
+
+
+                </script>
    </head>
    <body>
       <div class="container-fluid col-lg-12">
@@ -103,7 +106,7 @@
                            </div> -->
                         </div>
                         <div>
-                          <input type="submit" value="Search" name="submit" id="search" class="btn btn-success" style="margin-top: 10px;">
+                          <input type="submit" value="Search" name="submit" id="search" class="btn btn-success" style="margin-top: 10px;" onclick="splitDate(edate)">
                           <input type="button" value="Close"  name="close" id="close" class="btn btn-success" onclick="location.href = '../admin.php';" style="margin-top: 10px;">
                         </div>
                      </form>
@@ -134,8 +137,8 @@
                                 // echo $cid;
                                 $edis=$_POST['edis'];
                                  $eamt=$_POST['eamt'];
-                                 $edate1=$_POST['edate1'];
-                                 $edate2=$_POST['edate2'];
+                                 $edate1=$_POST['edate1']." 00:00:00";
+                                 $edate2=$_POST['edate2']." 00.00.00";
              
                                 if ($_POST['edis']=='' and $_POST['eamt']=='' and $_POST['edate1']=='' and $_POST['']=='') {
                                  $query= "SELECT * FROM tblexpencemst WHERE RecStatus=1";
@@ -173,14 +176,16 @@
                                 while ($row=mysqli_fetch_array($run))
                                 {
                                     $eid=$row[0];
-                                    $edis=$row[2];
-                                    $edate=$row[1];
+                                    $edis=$row[1];
+                                    $edate=$row[2];
+                                    $mydate = date('Y-m-d',strtotime($edate));
                                     $eamt=$row[3];
+                             
                                   ?>
                         </tr>
-                               <td><?php echo $eid; ?></td>
+                            <td><?php echo $eid; ?></td>
+                            <td><?php echo $mydate; ?></td>
                             <td><?php echo $edis; ?></td>
-                            <td><?php echo $edate; ?></td>
                             <td><?php echo $eamt; ?></td>
                             <td><a href="UpdateExpense.php?id=<?php echo $eid; ?>"><input type="Button" value="Update" name="" class="btn btn-primary" id="btn"></a> <a href="DeleteExpense.php?id=<?php echo $eid; ?>"><input type="Button" value="Delete" name="" class="btn btn-primary" id="btn"></a></td>                  
                         </tr>
@@ -198,3 +203,13 @@
 
    </body>
    </html>
+
+   <script type="text/javascript">
+     function splitDate(date) {
+        var DateArray = date.split(" ");
+        DateArray = DateArray[0];
+        DateArray = DateArray.split("-");
+        return (DateArray[2]+"-"+DateArray[1]+"-"+DateArray[0]);
+    }
+
+   </script>

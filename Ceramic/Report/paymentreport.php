@@ -46,7 +46,7 @@
                         </center>
                     </div>
                     <div class="carr card-body">
-                      <form id="searchByForm" autocomplete="off" method="POST" target="paymentreport.php">
+                      <form id="searchByForm" autocomplete="off" method="POST" action="paymentreport.php" >
                             <div class="row">
                                 <div class="row col-md-12">
                                     <div class="col-md-1">

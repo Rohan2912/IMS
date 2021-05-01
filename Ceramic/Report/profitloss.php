@@ -133,7 +133,7 @@
                          // echo "$query3";
                           $run3=mysqli_query($con,$query3);  
 
-                          $query4="SELECT COALESCE(sum(Amount),0) FROM tblexpencemst WHERE ModifiedDate Like '$start' AND RecStatus=1";
+                          $query4="SELECT COALESCE(sum(Amount),0) FROM tblexpencemst WHERE ExpanceDate Like '$start' AND RecStatus=1";
                           $run4=mysqli_query($con,$query4);
                           //echo $query4;      
                       }
@@ -154,7 +154,7 @@
                          // echo "$query3";
                           $run3=mysqli_query($con,$query3);
 
-                          $query4="SELECT COALESCE(sum(Amount),0) FROM tblexpencemst WHERE ModifiedDate BETWEEN '$start' AND '$end' AND RecStatus=1";
+                          $query4="SELECT COALESCE(sum(Amount),0) FROM tblexpencemst WHERE ExpanceDate BETWEEN '$start' AND '$end' AND RecStatus=1";
                           $run4=mysqli_query($con,$query4);
                       }     
 

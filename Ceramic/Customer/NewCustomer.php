@@ -147,18 +147,7 @@ if(isset($_POST['submit'])){
                               
             }
          } 
-         // setTimeout(function () { 
-         //             swal({
-         //                title: "Customer Activated Succesfully",
-         //                text: "@ CustomerId = '.$myque3.'",
-         //                type: "success",
-         //                confirmButtonText: "OK"
-         //             },
-         //             function(isConfirm){
-         //                if (isConfirm) {
-         //                   window.location.href = "NewCustomer.php";
-         //                }  
-         //          }); }, 1);
+       
 
          else{
             $que = "INSERT INTO tblcustomermst (CustomerName,MobileNo,Email,GSTNo,Address,CreatedDate,ModifiedDate,RecStatus) VALUES('$temp','$cmno','$cemail','$cgst','$caddress',NOW(),NOW(),1)";
@@ -182,30 +171,7 @@ function(isConfirm){
 }); }, 1);
             </script>';
 
-            // echo '<script>swal.fire("Customer Added Succesfully","","success")</script>';
-
-            // echo '<script>window.location.href = "NewCustomer.php"</script>';
-
-            
-            // if($query)
-            // {  
-
-            //    $reg="SELECT u_id FROM u_reg WHERE u_name LIKE '$name'and u_email LIKE '$email'and u_contact LIKE '$contact'and u_degree LIKE '$degree'and u_college LIKE '$collage' and u_dur LIKE '$dur' and u_tech LIKE '$tech' and u_guide LIKE '$guide' and u_jdate LIKE '$date' and u_NOC LIKE '$noc'  ";
-
-            //    $query1=mysqli_query($conn,$reg);
-
-            //    while($run=mysqli_fetch_array($query1))
-            //    {
-            //       $u_id=$run[0];
-
-
-            //       echo "<script>window.alert('Registration no is: $u_id')</script>";
-            //    }
-
-            // }
-            // else{
-            //    echo "Registration Failed";
-            // }
+          
          }
       
   

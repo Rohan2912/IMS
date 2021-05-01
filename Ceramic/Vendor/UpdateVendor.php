@@ -79,7 +79,7 @@
 <br>
                         <div class="col-12">
                            <input type="submit" value="Save" name="update" id="update" class="btn btn-primary">
-                           <input type="button" value="Close"  name="close" id="close" class="btn btn-primary" onclick="location.href = '../admin.php';">
+                           <input type="button" value="Close"  name="close" id="close" class="btn btn-primary" onclick="location.href = './ManageVendor.php';">
                         </div>
                      </form>
                   </div>

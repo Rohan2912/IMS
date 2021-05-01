@@ -316,7 +316,7 @@ margin-bottom: 0px;
                     <button class="button" onclick="location.href = 'Challan/addNewChallan.php';" ><span>New Challan </span></button>
                     <button class="button" onclick="location.href = 'Invoice/addNewChallan.php';" ><span>New Invoice </span></button>
                     <button class="button" onclick="location.href = 'Quatation/NewQuatation.php';"><span>New Quatation </span></button>
-                    <button class="button" onclick="location.href = 'temp.html';"><span>New Payment </span></button>
+                    <button class="button" onclick="location.href = 'Payment/NewPayment.php';"><span>New Payment </span></button>
                     <button class="button" onclick="location.href = 'Expense/NewExpense.php';"><span>New Expense </span></button>
                     </div>
                     <div style="float: left; margin-top: 10px;">
@@ -324,7 +324,7 @@ margin-bottom: 0px;
                     </div>
                     
                     <div id="mybutton1">
-                        <span><button class="button" id="mybutton2" onclick="location.href = '../Balaji/admin.php';"><span>Balaji Ceramic & Pippe Filtting</span></button></span>
+                        <span><button class="button" id="mybutton2" onclick="location.href = '../temp.html';"><span>Balaji Ceramic & Pippe Filtting</span></button></span>
                     </div>
                 </footer>
 

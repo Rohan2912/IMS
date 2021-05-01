@@ -11,7 +11,8 @@
   {
      $update_id=$row[0];
      $dis=$row[1];
-     $date=$row[2];
+     $mydate=$row[2];
+     $date = date('Y-m-d',strtotime($mydate));
      $amount=$row[3];
      
   }
@@ -85,6 +86,7 @@
                                 <div class="row">
                                     <div class="col-md-2 mt-4">
                                         <input type="submit" value="Save" name="update" id="update" class="btn btn-primary">
+                                        <input type="button" value="Close"  name="close" id="close" class="btn btn-primary" onclick="location.href = './ManageExpense.php';">
                                     </div>
                                 </div>
                             </div>
