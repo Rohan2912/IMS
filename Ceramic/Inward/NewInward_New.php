@@ -693,7 +693,7 @@
                               <label class="form-check-label" for="inlineRadio2">Existing Vendor</label>
                               <div id="button" class="form-check-inline"></div>
                            </div>
-                           <label class="form-label" style="margin-left: 100px;">Stock Type: </label>
+                           <label class="form-label" style="">Stock Type: </label>
                            <div class="form-check form-check-inline">
                               <input class="form-check-input" type="radio" name="bill" id="bill" value="bill"
                                  onchange="checkRadio(this)">

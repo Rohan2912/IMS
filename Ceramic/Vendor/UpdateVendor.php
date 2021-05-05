@@ -53,12 +53,12 @@
 
                         <div class="form-group col-md-6">
                            <label class="form-label">Vendor Name: </label>
-                           <input type="text" name="vname" class="form-control" id="vname" value="<?php echo $CustomerName;?>" placeholder="Enter Your Name" required="" pattern="[A-Za-z\s]+" title="Only Contains Character"> 
+                           <input type="text" name="vname" class="form-control" id="vname" value="<?php echo $CustomerName;?>" placeholder="Enter Your Name" required="" pattern="[A-Za-z\s]+" title="Only Contains Character" requird=''> 
                         </div>
 
                         <div class="form-group col-md-6">
                            <label class="form-label">Mobile No.: </label>
-                           <input type="text" name="vmno" class="form-control" id="vmno" value="<?php echo $MobileNo;?>" pattern="[0-9]{10}" maxlength="10" placeholder="99XXXXXXXX" required="" title="Only Contains Numbers"> 
+                           <input type="text" name="vmno" class="form-control" id="vmno" value="<?php echo $MobileNo;?>" pattern="[0-9]{10}" maxlength="10" placeholder="99XXXXXXXX" required="" title="Only Contains Numbers" required=""> 
                         </div>
 
                         <div class="form-group col-md-6">
@@ -69,12 +69,12 @@
 
                         <div class="form-group col-md-6">
                            <label class="form-label">Email Id: </label>
-                           <input type="email" name="vemail" class="form-control" id="vemail" value="<?php echo $Email;?>" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@gmail.com" required=""> 
+                           <input type="email" name="vemail" class="form-control" id="vemail" value="<?php echo $Email;?>" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@gmail.com"> 
                         </div>
 
                         <div class="form-group col-md-6">
                            <label class="form-label">Address: </label>
-                           <textarea class="form-control" rows="5" id="vaddress" name="vaddress" required=""><?php echo $Address;?></textarea> 
+                           <textarea class="form-control" rows="5" id="vaddress" name="vaddress"><?php echo $Address;?></textarea> 
                         </div>
 <br>
                         <div class="col-12">

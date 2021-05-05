@@ -230,8 +230,8 @@
         $gtotal=$row['TotalAmount'];
         $transportation_cost = $row['TransportationCost'];
        // echo $transportation_cost;
-
-        $challan_no = str_pad($challan_id,9,"0", STR_PAD_LEFT);
+                $challan_no = $row['InvoiceNo'];
+       // $challan_no = str_pad($challan_id,9,"0", STR_PAD_LEFT);
 
         $year = date('Y');
         $month = date('m');
